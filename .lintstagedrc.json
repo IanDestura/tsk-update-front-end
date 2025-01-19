@@ -1,0 +1,11 @@
+{
+     "assets/**/**.css": "npx stylelint --fix",
+     "{components,layouts,pages}/**/**.vue": [
+          "eslint --fix --fix-type suggestion,layout",
+          "prettier --write"
+     ],
+     "{composables,constants,stores}/**.js": [
+          "eslint --fix --fix-type suggestion,layout",
+          "prettier --write"
+     ]
+}
